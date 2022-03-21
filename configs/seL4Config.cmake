@@ -233,7 +233,7 @@ if (CMAKE_ASM_COMPILER_ID MATCHES "GNU")
 endif()
 
 
-if("$LLVM_TOOLCHAIN" STREQUAL "ON")
+if(LLVM_TOOLCHAIN)
     set(toolchain_file gcc.cmake)
 else()
     set(toolchain_file llvm.cmake)
